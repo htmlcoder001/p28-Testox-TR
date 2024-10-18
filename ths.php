@@ -32,11 +32,11 @@
           <div class="wrap-input">
             <div class="input">
               <label for="name">İsim</label>
-              <div><?php echo ($requestParams['name'])?></div>
+              <div><?php echo ($requestParams['user_name'])?></div>
             </div>
             <div class="input">
               <label for="name">Telefon</label>
-              <div><?php echo ($requestParams["phone"])?></div>
+              <div><?php echo ($requestParams["user_phone"])?></div>
             </div>
           </div>
           <button type="button" onclick="{showForm()}" id="hideButton">

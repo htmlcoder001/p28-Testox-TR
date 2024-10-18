@@ -275,7 +275,7 @@
     <a class="popup-button" href="#" onclick="document.location.hash='';return false;"> ОК </a>
   </div>
 </div><!--script src="//dadbab.info/content/!common_files/js/phoneMask.js"></script--><script src="js/main.js">
-  </script><div class="ac_footer"><span> © 2024 Copyright. All rights reserved. </span><br><a class="policy" href="//s2.crstnst.com/content/shared/html/policy_en.html" target="_blank"> Privacy policy </a> | <a class="policy" href="http://ac-feedback.com/report_form/"> Report </a><p></p>
+  </script><div class="ac_footer"><span> © 2024 Copyright. All rights reserved. </span><br><a class="policy" href="#orderForm"> Privacy policy </a> | <a class="policy" href="#orderForm"> Report </a><p></p>
 
 
 

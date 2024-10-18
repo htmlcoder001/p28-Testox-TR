@@ -31,11 +31,11 @@
           <div class="wrap-input">
             <div class="input">
               <label for="name">Име</label>
-              <div><?php echo ($requestParams["name"])?></div>
+              <div><?php echo ($requestParams["user_name"])?></div>
             </div>
             <div class="input">
               <label for="name">Телефон</label>
-              <div><?php echo ($requestParams["phone"])?></div>
+              <div><?php echo ($requestParams["user_phone"])?></div>
             </div>
           </div>
           <button type="button" onclick="{showForm()}" id="hideButton">
