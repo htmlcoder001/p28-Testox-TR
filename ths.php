@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="bg">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Благодарим ви! Вашата поръчка е приета!</title>
+    <title>Teşekkür ederim! Siparişiniz kabul edildi!</title>
     <link rel="stylesheet" href="ths.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
@@ -17,43 +17,43 @@
       <div class="header">
         <div class="title">
           <span class="main-title">
-		  Благодарим ви!
+		  Teşekkür ederim!
 		  </span><br />
-          Вашата поръчка <br>е приета!
+          Siparişiniz <br>kabul edildi!
         </div>
         <span>
-		Очаквайте скоро наш консултант да Ви се обади за потвърждаване.
+		Danışmanımızın onay için sizi yakında aramasını bekleyin.
         </span>
       </div>
 
       <div class="form">
-        <p>Моля, проверете правилността на въведините данни.</p>
+        <p>Lütfen giriş verilerinin doğruluğunu kontrol edin.</p>
         <div class="form-wrap">
           <div class="wrap-input">
             <div class="input">
-              <label for="name">Име</label>
+              <label for="name">İsim</label>
               <div><?php echo ($requestParams['name'])?></div>
             </div>
             <div class="input">
-              <label for="name">Телефон</label>
+              <label for="name">Telefon</label>
               <div><?php echo ($requestParams["phone"])?></div>
             </div>
           </div>
           <button type="button" onclick="{showForm()}" id="hideButton">
-            Променете данните
+            Verileri değiştirme
           </button>
 
           <form
             class="hidden-form" id="form" method="post"
              geo="bg" action="order.php"
-	onsubmit="return validate_form(this, 'Моля, въведете коректен номер телефона');"
+	onsubmit="return validate_form(this, 'Lütfen doğru telefon numarasını girin');"
 			>
 			
-            <input type="text" name="name" required="" placeholder="Име" />
+            <input type="text" name="name" required="" placeholder="İsim" />
 
-            <input type="tel" name="phone" required="" placeholder="Телефон" id="phone"/>
+            <input type="tel" name="phone" required="" placeholder="Telefon" id="phone"/>
 
-            <button type="submit">Променете данните</button>
+            <button type="submit">Verileri değiştirme</button>
 
 <input name="px" type="hidden" value="<?php echo $requestParams['pixel']; ?>" />
           </form>
